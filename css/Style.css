@@ -1,0 +1,323 @@
+/* HereACG Html Style
+	BY Alxtit
+	
+	Font:
+	SourceSansPro
+	Material Icons
+*/
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../fonts/MaterialIcons-Regular.woff') format('woff'),
+    url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@font-face { 
+	font-family: SourceSansPro-Light;
+	src: url('../fonts/SourceSansPro-Light.ttf');
+} 
+
+
+html,body{
+	height:100%; margin:0; padding:0;
+	font-family: 'SourceSansPro-Light','Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+	background-color: #212121;
+}
+
+a:link{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+a:active{
+	text-decoration:none;
+}
+
+header,.header{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+
+.header .header_line{
+	width: 0%;
+	height: 2px;
+	background-color: rgba(0, 199, 246, 0.8);
+	position: fixed;
+	top: 60px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+.header .title{
+	font-family: SourceSansPro-Light;
+	font-size:30px;
+	position: fixed;
+	color: #fff;
+	left: 20px;
+	top: 10px;
+}
+
+@media (max-width: 480px) {
+	.header .header_nav{
+		display:none;
+	}
+	.header .header_menu{
+		float: right;
+		margin-top: 12px;
+		margin-right: 10px;
+		border: 2px solid #fff;
+		border-radius: 5px;
+		width: 40px;
+		height:30px;
+		color:#fff;
+		text-align: center;
+		-webkit-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+	.header .menu_top{
+		margin-top: 2.5px;
+	}
+	.header .header_menu:active{
+	color:#000;
+	background-color: #fff;
+}
+}
+
+@media (min-width: 480px) {
+	.header .header_menu{
+		display:none;
+	}
+	::-webkit-scrollbar {
+		width: 5px;
+}
+	::-webkit-scrollbar:horizontal {
+		height: 8px;
+}
+	::-webkit-scrollbar-thumb {
+		border-radius: 0px;
+		background-color: rgba(255, 255, 255, .5);
+}
+}
+
+.header .header_nav ul li {
+    display: inline;
+}
+
+.header .header_nav{
+	float: right;
+    width: auto;
+    height: 60px;
+    padding: 0 ;
+}
+
+.header .header_nav ul{
+	float: right;
+    margin: 0px;
+    width: auto;
+	height: 60px;
+    list-style: none;
+}
+
+.header .header_nav li{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;    
+    outline: none;
+	line-height: 55px;
+}
+
+.header .header_nav li:hover{
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0, 199, 246, 0.8);
+}
+
+.header #menu_list{
+	width: 100%;
+	height: 89%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+	position: fixed;
+	top: 62px;
+	z-index: -1;
+	text-align: center;
+	color: #fff;
+	overflow-y :auto;
+}
+
+.header #menu_list .menu_nav ul,li{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+.header #menu_list .menu_nav{
+	margin: 10px auto;
+}
+
+.header #menu_list .menu_nav ul{
+	margin: 0 auto;
+}
+
+.header #menu_list .menu_nav li{
+	margin: 10px auto;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	width: 90%;
+	height: 30px;
+	color: #fff;
+	line-height: 28px;
+}
+
+.header #menu_list .menu_nav li:active{
+	margin: 10px auto;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	width: 90%;
+	height: 30px;
+	color: #000;
+	line-height: 28px;
+	background-color: #fff;
+}
+
+.large-header {
+	background-image: url(../images/bg.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	top: 0;
+}
+
+.large-header .htitle{
+	text-align: center;
+	color: #fff;
+	margin-top: 200px;
+	font-size: 40px;
+	display:none;
+}
+
+.large-header .header_hitokoto{
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	bottom: -80px;
+	z-index: -1;
+}
+
+.large-header .hitokotornd{
+	color: white;
+	background-color: rgba(0, 199, 246, 0.5);
+	width: 0%; 
+	height: 2px;
+	position: relative;
+}
+
+main{
+	color: #fff;
+	position: relative;
+	top: 396px;
+	display: none;
+	z-index:9999;
+	background-color: #212121;
+}
+
+main .text_crad{
+	width: 60%;
+	height: auto;
+	background-color: #414141;
+	border-radius: 5px;
+	position: relative;
+	top: 20px;
+	margin:auto;
+	left:0;
+    right:0;
+}
+
+main .text_crad .text_title{
+	text-align: center;
+	margin: 4px auto;
+	font-size: 24px;
+}
+
+main .text_crad .tline{
+	width: 90%;
+	height: 2px;
+	background-color: #525252;
+	margin: 0 auto;
+}
+
+main .text_crad .text_span{
+	width: 90%;
+	height: auto;
+	margin: 2px auto;
+}
+
+main .text_crad .text_bottom{
+	margin: 4px auto;
+	text-align: center;
+}
+
+@media (max-width: 480px) {
+main .text_crad{
+	width: 100%;
+	height: auto;
+	background-color: #414141;
+	border-radius: 0;
+	position: relative;
+	top: 20px;
+	margin:auto;
+	left:0;
+    right:0;
+}
+}
