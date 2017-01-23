@@ -1,0 +1,6 @@
+﻿{% extend "base.html" %}
+{% block main%}
+	{% for p in passages %}
+		{% module PassageCard(p) %}
+	{% end %}
+{% end %}
