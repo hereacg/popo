@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+pymongo
+tornado
+wood
+backup
+bson
